@@ -28,6 +28,7 @@ html {
 
 html::-webkit-scrollbar {
     width: .8rem;
+    background: linear-gradient(to top, #eabb4d 0%, #9d784b 100%);
 }
 
 html::-webkit-scrollbar-track {
@@ -303,11 +304,16 @@ section {
 }
 
 .menu .box-container .box .price span {
-    color: #fff;
     font-size: 1.5rem;
     text-decoration: line-through;
 }
+.menu .box-container .box:hover {
+    background: #fff;
+}
 
+.menu .box-container .box:hover >* {
+    color: var(--black);
+}
 
 /* Media Queries */
 @media (max-width: 991px) {
