@@ -166,6 +166,7 @@ section {
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+    overflow: scroll;
 }
 
 .header .cart-items-container.active {
@@ -178,6 +179,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    /*display: none;*/
 }
 
 .header .cart-items-container .cart-item .fa-times {
@@ -201,16 +203,30 @@ section {
     font-size: 2rem;
     color: var(--black);
     padding-bottom: .5rem;
+    font-weight: bold;
 }
 
 .header .cart-items-container .cart-item .content .price {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item .content .price span {
+    font-size: 1.3rem;
 }
 
 .header .cart-items-container .btn {
     width: 100%;
     text-align: center;
+    display: none;
+}
+
+.header .cart-items-container h3 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    /*display: none;*/
 }
 
 /* Home section */
@@ -303,10 +319,11 @@ section {
     padding: .5rem 0;
 }
 
-.menu .box-container .box .price span {
+.price span {
     font-size: 1.5rem;
     text-decoration: line-through;
 }
+
 .menu .box-container .box:hover {
     background: #fff;
 }
@@ -572,6 +589,8 @@ section {
 .footer .credit span {
     color: var(--main-color);
 }
+
+
 
 
 /* Media Queries */
